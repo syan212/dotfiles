@@ -15,18 +15,14 @@ return {
     -- Tree
     {
         "nvim-tree/nvim-tree.lua",
-        config = function()
-            require("nvim-tree").setup()
-        end,
+        opts = {},
     },
 
     -- Lualine
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
-        config = function()
-            require('lualine').setup()
-        end,
+        opts = {},
     },
 
     -- Tabs
@@ -36,9 +32,7 @@ return {
             'lewis6991/gitsigns.nvim',
             'nvim-tree/nvim-web-devicons',
         },
-        config = function()
-            require('barbar').setup()
-        end,
+        opts = {},
     },
 
     -- Completion plugins
@@ -52,4 +46,11 @@ return {
     -- Vsnip (for completion).
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
+
+    -- Treesitter
+    {
+        'nvim-treesitter/nvim-treesitter',
+        lazy = false,
+        build = ':TSUpdate'
+    }
 }

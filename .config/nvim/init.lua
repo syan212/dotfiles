@@ -52,3 +52,6 @@ require('keymaps')
 -- Completions
 require('cmp_config')
 
+require('nvim-treesitter').install({ 
+    'rust', 'javascript', 'python', 'lua', 'markdown', 'c', 'cpp',
+})
