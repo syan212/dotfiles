@@ -42,6 +42,7 @@ require('config.lazy')
 -- LSPs
 vim.lsp.enable('basedpyright')
 vim.lsp.enable('bashls')
+vim.lsp.enable('lua_ls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('svelte')
@@ -52,6 +53,7 @@ require('keymaps')
 -- Completions
 require('cmp_config')
 
+-- Treesitter parsers
 require('nvim-treesitter').install({ 
-    'rust', 'javascript', 'python', 'lua', 'markdown', 'c', 'cpp',
+    'zsh', 'bash', 'rust', 'javascript', 'python', 'lua', 'markdown', 'c', 'cpp',
 })

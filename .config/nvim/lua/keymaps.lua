@@ -27,7 +27,8 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 
 -- Close buffer
-map('n', '<A-c>', '<Cmd>BufferClose<CR><Cmd>q<CR>', opts)
+map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts) -- Singular buffer (by default goes to nvim-tree, so :q
+map('n', '<A-d>', '<Cmd>BufferClose<CR><Cmd>q<CR>', opts) -- Multiple buffers
 
 -- Magic buffer-picking mode
 map('n', '<C-p>',   '<Cmd>BufferPick<CR>', opts)
@@ -40,9 +41,12 @@ map('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', opts)
 map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
+-- Nvim-tree focus
+map('n', '<C-t>', '<Cmd>NvimTreeFocus<CR>', opts)
+
 -- LSP keymaps
-map('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
-map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
-map('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
-map('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+map('n', '<Space>e', '<Cmd>lua vim.diagnostic.open_float()<CR>', opts)
+map('n', '[d', '<Cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+map('n', ']d', '<Cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+map('n', '<Space>q', '<Cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 

@@ -3000,6 +3000,6 @@ bold_italic_font auto
 # END_KITTY_FONTS
 
 # BEGIN_KITTY_THEME
-# Atom
+# Adwaita darker
 include current-theme.conf
 # END_KITTY_THEME
