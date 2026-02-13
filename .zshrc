@@ -118,4 +118,4 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 alias rm='echo "This is not the command you are looking for. Remeber what happened last time?"; false'
-
+alias nv='nvim .'
