@@ -42,10 +42,12 @@ require('config.lazy')
 -- LSPs
 vim.lsp.enable('basedpyright')
 vim.lsp.enable('bashls')
+vim.lsp.enable('cssls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('svelte')
+vim.lsp.enable('vtsls')
 
 -- Keymaps
 require('keymaps')
