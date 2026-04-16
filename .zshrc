@@ -119,3 +119,6 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 alias rm='echo "Please use trash instead"; false'
 alias nv='nvim .'
+
+# rbenv
+eval "$(rbenv init -)"
