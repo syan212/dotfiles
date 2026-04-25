@@ -4,9 +4,6 @@ if [[ ":$FPATH:" != *":/home/syan235711/.zsh/completions:"* ]]; then export FPAT
 # Zsh-completions plugin
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
-# Deno completions
-. "/home/syan235711/.deno/env"
-
 # Load completions
 autoload -Uz compinit
 compinit
@@ -122,3 +119,5 @@ alias nv='nvim .'
 
 # rbenv
 eval "$(rbenv init -)"
+
+[ -f "/home/syan235711/.ghcup/env" ] && . "/home/syan235711/.ghcup/env" # ghcup-env
